@@ -6,7 +6,7 @@ public class Autor {
     private String apellidoAutor;
     private String nacionalidad;
     private String biografia;
-    
+   //en esta parte se hacen los atributos hacia el persosaje 
     public Autor () {
 }
        public Autor(int idAutor, String nombreAutor, String apellidoAutor, String nacionalidad, String biografia) {
@@ -16,7 +16,7 @@ public class Autor {
         this.nacionalidad = nacionalidad;
         this.biografia = biografia;
     }
-
+//el get es como preguntarle como se llama ala propia class y el set como se llamara
     public int getIdAutor() {
         return idAutor;
     }
@@ -56,7 +56,7 @@ public class Autor {
     public void setBiografia(String biografia) {
         this.biografia = biografia;
     }
-
+//sirve para simplemente en el codigo no aparezca un codigo, si no el nombre de la class
     @Override
     public String toString() {
         return nombreAutor + " " + apellidoAutor;
