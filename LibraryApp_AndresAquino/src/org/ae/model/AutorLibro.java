@@ -22,3 +22,16 @@ public void setIdAutorLibro(int idAutorLibro) {
     this.idAutorLibro = idAutorLibro;
 }
 
+public int getIdAutor() {
+    return idAutor;
+}
+public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+}
+
+
