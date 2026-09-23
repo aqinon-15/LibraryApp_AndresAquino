@@ -27,7 +27,7 @@ public class LineaFactura {
 
     /**
      *obtiene e numero identificador de la factura
-     * 
+     *it status
      * 
      * @return el numero de la factura
      */
