@@ -36,7 +36,7 @@ public class AutorLibro {
 }
 
     /**
-     *
+     *se arreglo para subir nuevo commit
      * @param idAutorLibro damos los AutorLibro de set 
      */
     public void setIdAutorLibro(int idAutorLibro) {
