@@ -4,11 +4,11 @@ la diferencia es que la clase es la baje de todo lo que sigue y el objeto son su
 2. ¿Qué es un atributo?
 su propia palabra lo dice es atribuir algo que ya hicimos anteriormente, solamente volver a traerlo en pocas palabras
 3. ¿Qué es un método?
-Son las acciones o funciones en si que realiza la clase.
+ Son las acciones o funciones en si que realiza la clase.
 4. ¿Para qué sirve un constructor?
-Sirve pa iniciar o comenzar el objeto cuando lo haces.
+ Sirve pa iniciar o comenzar el objeto cuando lo haces.
 5. Diferencia entre private, public y protected
-Private se queda escondido osea no se puede tocar, public se ve y si se puede manejar, protected medio escondido.
+ Private se queda escondido osea no se puede tocar, public se ve y si se puede manejar, protected medio escondido.
 6. ¿Para qué sirven get y set?
 El get para pedir o realizar y el set es para guardar o cambiar.
 7. ¿Qué significa encapsulamiento?
@@ -21,6 +21,7 @@ Es para que una clase cumpla reglas que le imponen la interfaz.
 Static se comparte con todos y final no se puede cambiar, es una constante.
 
 Base de datos y persistencia
+
 11. ¿Qué es una tabla relacional?
 Es una tabla con filas y columnas ordenadas.
 12. ¿Qué es una clave primaria?
@@ -38,7 +39,9 @@ Clase que maneja datos sin mezclar con logica.
 18. ¿Por qué separar SQL del Controller?
 Pa no mezclar consultas con el codigo normal.
 
+
 JavaFX y arquitectura
+
 19. ¿Qué es JavaFX?
 Es libreria para hacer ventanas y botones bonitos y el desarrollo de aplicaciones.
 20. ¿Qué es FXML?
