@@ -37,7 +37,7 @@ public class LineaFactura {
 
     /**
      *
-     * @param numeroFactura
+     * @param numeroFactura damos el numero de factura
      */
     public void setNumeroFactura(int numeroFactura) {
         this.numeroFactura = numeroFactura;
@@ -45,7 +45,7 @@ public class LineaFactura {
 
     /**
      *
-     * @return
+     * @return nos da la fecha de emision
      */
     public String getFechaEmision() {
         return fechaEmision;
@@ -53,7 +53,7 @@ public class LineaFactura {
 
     /**
      *
-     * @param fechaEmision
+     * @param fechaEmision damos la fecha de emicion
      */
     public void setFechaEmision(String fechaEmision) {
         this.fechaEmision = fechaEmision;
@@ -61,7 +61,7 @@ public class LineaFactura {
 
     /**
      *
-     * @return
+     * @return nos dan el cui del cliente 
      */
     public long getCuiCliente() {
         return cuiCliente;
@@ -69,7 +69,7 @@ public class LineaFactura {
 
     /**
      *
-     * @param cuiCliente
+     * @param cuiCliente resivimos el cui de cliente
      */
     public void setCuiCliente(long cuiCliente) {
         this.cuiCliente = cuiCliente;
@@ -77,7 +77,7 @@ public class LineaFactura {
 
     /**
      *
-     * @return
+     * @return nos da el nombre de cliente
      */
     public String getNombreCliente() {
         return nombreCliente;
@@ -85,7 +85,7 @@ public class LineaFactura {
 
     /**
      *
-     * @param nombreCliente
+     * @param nombreCliente damos nombreCliente
      */
     public void setNombreCliente(String nombreCliente) {
         this.nombreCliente = nombreCliente;
@@ -93,7 +93,7 @@ public class LineaFactura {
 
     /**
      *
-     * @return
+     * @return nos da el correoCliente
      */
     public String getCorreoCliente() {
         return correoCliente;
@@ -101,7 +101,7 @@ public class LineaFactura {
 
     /**
      *
-     * @param correoCliente
+     * @param correoCliente damos correo cliente
      */
     public void setCorreoCliente(String correoCliente) {
         this.correoCliente = correoCliente;
@@ -109,7 +109,7 @@ public class LineaFactura {
 
     /**
      *
-     * @return
+     * @return resivimos de IsbnLibro
      */
     public String getIsbnLibro() {
         return isbnLibro;
@@ -117,7 +117,7 @@ public class LineaFactura {
 
     /**
      *
-     * @param isbnLibro
+     * @param isbnLibro damos el IsbnLibro
      */
     public void setIsbnLibro(String isbnLibro) {
         this.isbnLibro = isbnLibro;
@@ -125,7 +125,7 @@ public class LineaFactura {
 
     /**
      *
-     * @return
+     * @return dos dan el titulo del libro
      */
     public String getTituloLibro() {
         return tituloLibro;
@@ -133,7 +133,7 @@ public class LineaFactura {
 
     /**
      *
-     * @param tituloLibro
+     * @param tituloLibro damos el titulo del libro
      */
     public void setTituloLibro(String tituloLibro) {
         this.tituloLibro = tituloLibro;
@@ -141,7 +141,7 @@ public class LineaFactura {
 
     /**
      *
-     * @return
+     * @return nos da la cantidad del get
      */
     public int getCantidad() {
         return cantidad;
@@ -149,7 +149,7 @@ public class LineaFactura {
 
     /**
      *
-     * @param cantidad
+     * @param cantidad damos la cantidad
      */
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
@@ -157,7 +157,7 @@ public class LineaFactura {
 
     /**
      *
-     * @return
+     * @return nos dan PrecioUnatario
      */
     public double getPrecioUnitario() {
         return precioUnitario;
@@ -165,7 +165,7 @@ public class LineaFactura {
 
     /**
      *
-     * @param precioUnitario
+     * @param precioUnitario damos el precioUnitario
      */
     public void setPrecioUnitario(double precioUnitario) {
         this.precioUnitario = precioUnitario;
@@ -173,7 +173,7 @@ public class LineaFactura {
 
     /**
      *
-     * @return
+     * @return resivimos el subTotal de get
      */
     public double getSubtotal() {
         return subtotal;
@@ -181,7 +181,7 @@ public class LineaFactura {
 
     /**
      *
-     * @param subtotal
+     * @param subtotal damos el subTotal
      */
     public void setSubtotal(double subtotal) {
         this.subtotal = subtotal;
@@ -189,7 +189,7 @@ public class LineaFactura {
 
     /**
      *
-     * @return
+     * @return resivimos el UsuarioAtendio
      */
     public String getUsuarioAtendio() {
         return usuarioAtendio;
@@ -197,7 +197,7 @@ public class LineaFactura {
 
     /**
      *
-     * @param usuarioAtendio
+     * @param usuarioAtendio damos el usuarioAtendio
      */
     public void setUsuarioAtendio(String usuarioAtendio) {
         this.usuarioAtendio = usuarioAtendio;
@@ -205,7 +205,7 @@ public class LineaFactura {
 
     /**
      *
-     * @return
+     * @return resivimos el GranTotal
      */
     public double getGranTotal() {
         return granTotal;
@@ -213,7 +213,7 @@ public class LineaFactura {
 
     /**
      *
-     * @param granTotal
+     * @param granTotal damos lo que viene siendo el granTotal
      */
     public void setGranTotal(double granTotal) {
         this.granTotal = granTotal;
