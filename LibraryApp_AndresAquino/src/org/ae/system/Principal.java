@@ -12,12 +12,20 @@ import java.util.logging.Logger;
 import org.ae.manager.SesionContext;
 import org.ae.model.Usuario;
 
-
+/**
+ *
+ * @author Andres Aquino
+ */
 public class Principal extends Application {
 
     private static Stage escenarioPrincipal;
     private static final Logger log = Logger.getLogger(Principal.class.getName());
     
+    /**
+     *
+     * @param rutaFXML damos el ruta FXML
+     * @throws IOException
+     */
     public static void CambiarEscena(String rutaFXML) throws IOException {
         log.log(Level.INFO, "Se Cambio de escena a: {0}", rutaFXML);
         Parent raiz = FXMLLoader.load(
@@ -30,39 +38,48 @@ public class Principal extends Application {
         
     }
     /**
-     * devuelve la rutga del dashboard correspondiente al rol del usuario con
+     * devuelve la ruta del dashboard correspondiente al rol del usuario con
      * sesion activa. si no hay sesion o el rol es desconocido, devuelve la
      * ruta del login.
+     * @return pedimos la ruta de DashboardSegundoRol
      */
     public static String rutaDashboardSegunRol() {
         Usuario usuario = SesionContext.getInstancia().getUsuarioActual();
         if (usuario == null || usuario.getRol() == null) {
-            return "/org/ac/view/fxml/InicioSesionView.fxml";
+            return "/org/ae/view/fxml/InicioSesionView.fxml";
     }
     switch (usuario.getRol().toLowerCase()) {
             case "admin":
-                return "/org/ac/view/fxml/AdminDashboradView.fxml";
+                return "/org/ae/view/fxml/AdminDashboradView.fxml";
             case "empleado":
-                return "/org/ac/view/fxml/EmpleadoView.fxml";
+                return "/org/ae/view/fxml/EmpleadoView.fxml";
             case "cajero":
-                return "/org/ac/view/fxml/CajeroView.fxml";
+                return "/org/ae/view/fxml/CajeroView.fxml";
             default:
-                return "/org/ac/view/fxml/InicioSesionView.fxml";
+                return "/org/ae/view/fxml/InicioSesionView.fxml";
         }
     }
 
+    /**
+     *
+     * @param args damos el main 
+     */
     public static void main(String[] args) {
         log.info("Se inicio el programa");
         launch(args);
 
     }
 
+    /**
+     *
+     * @param escenarioPrincipal damops el escenario Principal
+     * @throws Exception
+     */
     @Override
     public void start(Stage escenarioPrincipal) throws Exception {
         Principal.escenarioPrincipal = escenarioPrincipal;
-        cambiarEscena("/org/ac/view/fxml/InicioSesionView.fxml");
+        CambiarEscena("/org/ac/view/fxml/InicioSesionView.fxml");
     }
 
 }
-
 
