@@ -22,43 +22,43 @@ Static se comparte con todos y final no se puede cambiar, es una constante.
 
 Base de datos y persistencia
 
-11. ¿Qué es una tabla relacional?
-Es una tabla con filas y columnas ordenadas.
-12. ¿Qué es una clave primaria?
-Es el id unico que identifica una de las filas.
+ 11. ¿Qué es una tabla relacional?
+Es una tabla con varias filas y muchas columnas ordenadas.
+ 12. ¿Qué es una clave primaria?
+Es el id unico que identifica una de las filas de las muchas que hay.
 13. ¿Qué es una clave foránea?
 Sirve para poder conectar datos entre dos tablas que son distintas.
-14. ¿Qué significa CRUD?
-Crear, leer, actualizar y borrar datos basicos.
-15. ¿Qué es JDBC?
-Es para poder conectar Java con la base de datos.
-16. ¿Qué es un procedimiento almacenado?
-Es codigo SQL guardado directo en el servidor.
-17. ¿Qué es DAO?
-Clase que maneja datos sin mezclar con logica.
-18. ¿Por qué separar SQL del Controller?
-Pa no mezclar consultas con el codigo normal.
+  14. ¿Qué significa CRUD?
+significa = (Crear, leer, actualizar y borrar datos basicos).
+ 15. ¿Qué es JDBC?
+Es para poder conectar lo que viene siendo Java con la base de datos.
+ 16. ¿Qué es un procedimiento almacenado?
+Es el codigo de SQL guardado directamente en el servidor.
+  17. ¿Qué es DAO?
+Es la clase que maneja datos sin mezclarlo con la logica.
+ 18. ¿Por qué separar SQL del Controller?
+Para no mezclar las consultas con el codigo que viene siendo normal.
 
 
 JavaFX y arquitectura
 
 19. ¿Qué es JavaFX?
 Es libreria para hacer ventanas y botones bonitos y el desarrollo de aplicaciones.
-20. ¿Qué es FXML?
-Archivo que dice como es que se ve la interfaz.
-21. ¿Qué función cumple SceneBuilder?
-Sirve pa diseñar pantallas sin escribir un codigo como tal.
-22. ¿Qué es un Controller?
-Clase que controla lo que hace el usuario.
+  20. ¿Qué es FXML?
+Archivo que dice como es que se viene viendo en la interfaz.
+ 21. ¿Qué función cumple SceneBuilder?
+Sirve para poder diseñar pantallas sin escribir un codigo como tal.
+ 22. ¿Qué es un Controller
+es el intermediario entre los que vienen siendo los datos y los usuarios.
 23. ¿Qué significa @FXML?
-Conecta cosas del FXML con el codigo Java.
-24. ¿Qué significa MVC?
-Modelo guarda los datos, vista los muestra, controlador los manda.
-25. ¿Qué responsabilidad tiene el modelo?
-El modelo guarda y procesa toda la info que se da.
-26. ¿Qué responsabilidad tiene la vista?
-La vista muestra datos y recibe clicks.
-27. ¿Qué responsabilidad tiene el controlador?
-El controlador conecta vista con modelo rapido.
-28. Dibuja recorrido de un dato hasta MySQL
+Conecta cosas del FXML con lo que viene siendo el codigo Java.
+  24. ¿Qué significa MVC?
+Modelo que guarda los datos, muestra todas las vistas, controla los mandos.
+ 25. ¿Qué responsabilidad tiene el modelo?
+El modelo guarda y procesa toda la informacion que se le dara.
+  26. ¿Qué responsabilidad tiene la vista?
+La vista muestra todos los datos y recibe los clicks.
+ 27. ¿Qué responsabilidad tiene el controlador?
+El controlador conecta las vista con modelo rapido.
+  28. Dibuja recorrido de un dato hasta MySQL
 Usuario → vista → controlador → modelo → base.
