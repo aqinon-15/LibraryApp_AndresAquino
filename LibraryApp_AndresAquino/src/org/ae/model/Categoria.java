@@ -1,33 +1,66 @@
 package org.ae.model;
     
-    public class Categoria {
+/**
+ *
+ * @author Andres Aquino
+ */
+public class Categoria {
         private int idCategoria;
         private String nombreCategoria;
         
-        public Categoria (){
+    /**
+     *
+     */
+    public Categoria (){
         }
         
-        public Categoria(int idcategoria, String nombreCategoria){
+    /**
+     *
+     * @param idcategoria damos los id osea usuarios de categorias
+     * @param nombreCategoria damos los nombres de categorias 
+     */
+    public Categoria(int idcategoria, String nombreCategoria){
             this.idCategoria = idCategoria;
             this.nombreCategoria = nombreCategoria;
         }
         
-        public int getIdCategoria (){
+    /**
+     *
+     * @return pedimos los id osea usuarios de categorias
+     */
+    public int getIdCategoria (){
             return idCategoria;
         }
         
-        public void setIdCategoria(int idCategoria) {
+    /**
+     *
+     * @param idCategoria damos id osea los usuarios de categorias 
+     */
+    public void setIdCategoria(int idCategoria) {
             this.idCategoria = idCategoria;
         }
-        public String getNombreCategoria() {
+
+    /**
+     *
+     * @return pedimos los Nonbre Categorias de get
+     */
+    public String getNombreCategoria() {
             return nombreCategoria;
         }
         
-        public void setNombreCategoria(String nombreCategoria) {
+    /**
+     *
+     * @param nombreCategoria damos los nombre de categorias 
+     */
+    public void setNombreCategoria(String nombreCategoria) {
             this.nombreCategoria = nombreCategoria;
         }
         
-        @Override
+    /**
+     *
+     * @return pedimos o requerimos de los String
+     */
+    @Override
         public String toString() {
             return nombreCategoria;
         }
