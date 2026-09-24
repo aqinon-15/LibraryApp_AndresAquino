@@ -43,4 +43,20 @@ public class AutorLibro {
     this.idAutorLibro = idAutorLibro;
 }
 
+<<<<<<< HEAD
 }
+=======
+public int getIdAutor() {
+    return idAutor;
+}
+public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+}
+
+
+>>>>>>> fcc2e129d16f9c44e1a92ecfcc4ce25bb3c28afa
