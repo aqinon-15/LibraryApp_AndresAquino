@@ -118,7 +118,7 @@ public class Venta {
 
     /**
      *establece la identidicacion del usuario
-     * 
+     * se hace par pull requests
      * @param idUsuario id usuario por asignar
      */
     public void setIdUsuario(int idUsuario) {
