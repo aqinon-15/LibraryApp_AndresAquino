@@ -16,7 +16,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.util.StringConverter;
-import org.ac.dao.DetalleVentaDAO;
+import org.ae.dao.DetalleVentaDAO;
 import org.ae.dao.LibroDAO;
 import org.ae.dao.VentaDAO;
 import org.ae.dao.impl.DetalleVentaDAOImpl;
@@ -286,7 +286,7 @@ public class DetalleVentaController implements Initializable {
     @FXML
     private void handleVolver() {
         try {
-            Principal.cambiarEscena(Principal.rutaDashboardSegunRol());
+            Principal.CambiarEscena(Principal.rutaDashboardSegunRol());
         } catch (Exception e) {
             mostrarError("Error al volver al menú: " + e.getMessage());
         }

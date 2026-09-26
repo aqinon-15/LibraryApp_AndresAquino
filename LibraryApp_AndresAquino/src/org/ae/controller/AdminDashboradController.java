@@ -65,53 +65,53 @@ public class AdminDashboradController implements Initializable {
     @FXML
     public void cerrarSesion(ActionEvent evento) {
         SesionContext.getInstancia().cerrarSesion();
-        navegar("/org/ac/view/fxml/InicioSesionView.fxml");
+        navegar("/org/ae/view/fxml/InicioSesionView.fxml");
     }
 
     @FXML
     public void irAUsuario(ActionEvent evento) {
-        navegar("/org/ac/view/fxml/UsuarioView.fxml");
+        navegar("/org/ae/view/fxml/UsuarioView.fxml");
     }
 
     @FXML
     public void irALibro(ActionEvent evento) {
-        navegar("/org/ac/view/fxml/LibroView.fxml");
+        navegar("/org/ae/view/fxml/LibroView.fxml");
     }
 
     @FXML
     public void irAAutor(ActionEvent evento) {
-        navegar("/org/ac/view/fxml/AutorView.fxml");
+        navegar("/org/ae/view/fxml/AutorView.fxml");
     }
 
     @FXML
     public void irACategoria(ActionEvent evento) {
-        navegar("/org/ac/view/fxml/CategoriaView.fxml");
+        navegar("/org/ae/view/fxml/CategoriaView.fxml");
     }
 
     @FXML
     public void irAEditorial(ActionEvent evento) {
-        navegar("/org/ac/view/fxml/EditorialView.fxml");
+        navegar("/org/ae/view/fxml/EditorialView.fxml");
     }
 
     @FXML
     public void irAVentas(ActionEvent evento) {
-        navegar("/org/ac/view/fxml/ListaVentasView.fxml");
+        navegar("/org/ae/view/fxml/ListaVentasView.fxml");
     }
 
     @FXML
     public void irAAutorLibro(ActionEvent evento) {
-        navegar("/org/ac/view/fxml/AutorLibroView.fxml");
+        navegar("/org/ae/view/fxml/AutorLibroView.fxml");
     }
 
     @FXML
     public void irADetalleVenta(ActionEvent evento) {
-        navegar("/org/ac/view/fxml/DetalleVentaView.fxml");
+        navegar("/org/ae/view/fxml/DetalleVentaView.fxml");
     }
 
     @FXML
     public void irAClientes(ActionEvent evento) {
         try {
-            Principal.cambiarEscena("/org/ae/view/fxml/ClienteView.fxml");
+            Principal.CambiarEscena("/org/ae/view/fxml/ClienteView.fxml");
         } catch (IOException e) {
             System.err.println("Error al cargar clientes: " + e.getMessage());
             
@@ -150,7 +150,7 @@ public class AdminDashboradController implements Initializable {
 
     private void navegar(String ruta) {
         try {
-            Principal.cambiarEscena(ruta);
+            Principal.CambiarEscena(ruta);
         } catch (IOException | NullPointerException e) {
             Alert alerta = new Alert(Alert.AlertType.INFORMATION,
                     "Esta sección estará disponible próximamente.", ButtonType.OK);

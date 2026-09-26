@@ -12,7 +12,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import org.ac.dao.FacturaDAO;
+import org.ae.dao.FacturaDAO;
 import org.ae.dao.impl.FacturaDAOImpl;
 import org.ae.exception.DaoException;
 import org.ae.model.LineaFactura;
@@ -100,7 +100,7 @@ public class FacturaController implements Initializable {
     private void handleVolver() {
         try {
             //Regresa a la lista de ventas (origen de la factura), no al dashboard.
-            Principal.cambiarEscena("/org/ac/view/fxml/ListaVentasView.fxml");
+            Principal.CambiarEscena("/org/ac/view/fxml/ListaVentasView.fxml");
         } catch (Exception e) {
             mostrarError("Error al volver al menú: " + e.getMessage());
         }

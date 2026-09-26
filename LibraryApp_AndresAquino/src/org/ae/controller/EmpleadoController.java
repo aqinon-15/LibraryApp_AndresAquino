@@ -104,7 +104,7 @@ public class EmpleadoController implements Initializable {
     @FXML
     public void nuevoLibro(MouseEvent evento) {
         navegar("/org/ae/view/fxml/LibroView.fxml");
-    
+    }
 
     @FXML
     public void nuevoAutor(MouseEvent evento) {
@@ -128,7 +128,7 @@ public class EmpleadoController implements Initializable {
 
     private void navegar(String ruta) {
         try {
-            Principal.cambiarEscena(ruta);
+            Principal.CambiarEscena(ruta);
         } catch (IOException | NullPointerException e) {
             Alert alerta = new Alert(Alert.AlertType.INFORMATION,
                     "Esta sección estará disponible próximamente.", ButtonType.OK);

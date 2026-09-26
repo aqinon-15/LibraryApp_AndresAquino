@@ -12,7 +12,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import org.ac.dao.LibroDAO;
+import org.ae.dao.LibroDAO;
 import org.ae.dao.impl.LibroDAOImpl;
 import org.ae.exception.DaoException;
 import org.ae.model.Libro;
@@ -80,7 +80,7 @@ public class InventarioController implements Initializable {
     @FXML
     private void handleVolver() {
         try {
-            Principal.cambiarEscena(Principal.rutaDashboardSegunRol());
+            Principal.CambiarEscena(Principal.rutaDashboardSegunRol());
         } catch (Exception e) {
             mostrarError("Error al volver al menú: " + e.getMessage());
         }

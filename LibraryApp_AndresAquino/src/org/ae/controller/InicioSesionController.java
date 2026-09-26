@@ -73,7 +73,7 @@ public class InicioSesionController implements Initializable {
     @FXML
     public void eventoRegistrarse(ActionEvent evento) {
         try {
-            Principal.cambiarEscena("/org/ac/view/fxml/RegistrarUsuarioView.fxml");
+            Principal.CambiarEscena("/org/ac/view/fxml/RegistrarUsuarioView.fxml");
         } catch (IOException e) {
             System.err.println("Error al cargar registro: " + e.getMessage());
             lblMensaje.setText("Error interno");
@@ -106,7 +106,7 @@ public class InicioSesionController implements Initializable {
             return;
         }
         try {
-            Principal.cambiarEscena(rutaDashboard);
+            Principal.CambiarEscena(rutaDashboard);
         } catch (IOException e) {
             System.err.println("Error al cargar la vista:" + rutaDashboard + e.getMessage());
             lblMensaje.setText("Error interno");

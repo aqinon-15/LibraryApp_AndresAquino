@@ -15,7 +15,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import org.ac.dao.AutorDAO;
+import org.ae.dao.AutorDAO;
 import org.ae.dao.impl.AutorDAOImpl;
 import org.ae.exception.DaoException;
 import org.ae.exception.ValidacionException;
@@ -239,7 +239,7 @@ public class AutorController implements Initializable {
     @FXML
     private void handleVolver() {
         try {
-            Principal.cambiarEscena(Principal.rutaDashboardSegunRol());
+            Principal.CambiarEscena(Principal.rutaDashboardSegunRol());
         } catch (Exception e) {
             mostrarError("Error al volver al menú: " + e.getMessage());
         }

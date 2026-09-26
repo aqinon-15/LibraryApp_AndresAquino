@@ -230,7 +230,7 @@ public class EditorialController implements Initializable {
     @FXML
     private void handleVolver() {
         try {
-            Principal.cambiarEscena(Principal.rutaDashboardSegunRol());
+            Principal.CambiarEscena(Principal.rutaDashboardSegunRol());
         } catch (Exception e) {
             mostrarError("Error al volver al menú: " + e.getMessage());
         }

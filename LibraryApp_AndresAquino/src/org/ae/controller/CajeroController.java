@@ -104,7 +104,7 @@ public class CajeroController implements Initializable {
 
     private void navegar(String ruta) {
         try {
-            Principal.cambiarEscena(ruta);
+            Principal.CambiarEscena(ruta);
         } catch (IOException | NullPointerException e) {
             Alert alerta = new Alert(Alert.AlertType.INFORMATION,
                     "Esta sección estará disponible próximamente.", ButtonType.OK);
