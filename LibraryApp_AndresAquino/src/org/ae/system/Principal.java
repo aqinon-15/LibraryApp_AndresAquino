@@ -78,7 +78,7 @@ public class Principal extends Application {
     @Override
     public void start(Stage escenarioPrincipal) throws Exception {
         Principal.escenarioPrincipal = escenarioPrincipal;
-        CambiarEscena("/org/ac/view/fxml/InicioSesionView.fxml");
+        CambiarEscena("/org/ae/view/fxml/InicioSesionView.fxml");
     }
 
 }
