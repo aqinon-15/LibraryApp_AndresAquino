@@ -17,7 +17,7 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #0a0b12;" styleClass="root" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ac.controller.InicioSesionController">
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #0a0b12;" styleClass="root" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ae.controller.InicioSesionController">
     <stylesheets>
         <URL value="@/org/ae/view/style/base.css" />
     </stylesheets>
